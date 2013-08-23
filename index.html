@@ -14,8 +14,6 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="stylesheets/screen.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -23,212 +21,30 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header>
-        	<div class="container">
-	        	<div class="grid">
-	        		<h1 id="logo"><a href="">RightScale</a></h1>
-			        <nav id="nav-main" class="float-left">
-				        <ul>
-				        	<li><a href="">Manage</a></li>
-				        	<li><a href="">Design</a></li>
-				        	<li><a href="">Clouds</a></li>
-				        	<li><a href="">Reports</a></li>
-				        	<li><a href="">Settings</a></li>
-				        </ul>
-					</nav>
-					<form method="post" action="" class="float-left" id="search">
-					    <input type="text" name="Search" value="Search" />
-					    <input type="submit" name="Submit" value="Search" />
-					<select id="search-section">
-						<option>[Account]</option>
-					</select>
-					</form>
-					<nav id="nav-utilities" class="float-left">
-						<ul>
-							<li><a href="">Logout</a></li>
-							<li><a href="">Support</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+    <header>
+    	<h1>jsBehave</h1>
 		</header>
+
 		<div class="" id="main" role="main">
-			<div class="container">
-				<div class="grid obj_sameHeights">
-				<div class="col-1-5" id="nav-side">
-					<nav class="module" id="bookmarks">
-						<h3><span>Bookmarks</span>
-						<span class="settings-small"><a href="">&#xf085;</a></span>
-						<span class="add-item"><a href="#">&#xf067;</a></span>
-						</h3>
-						<ul>
-							<li><a href="#">JM Deployment</a></li>
-							<li><a href="#">Production</a></li>
-							<li><a href="#">SB Master</a></li>
-						</ul>
-					</nav>
-					<nav class="module">
-						<h3>Navigation Tree</h3>
-						<ul id="navigation-tree"><a href="">Root</a>
-							<li class="expand"><a href="#">Production</a></li>
-							<li class="expand"><a href="#">Rails App</a></li>
-							<li class="collapse"><a href="#">Servers</a>
-								<ul>
-									<li class="expand"><a href="#">LB 1</a></li>
-									<li class="expand"><a href="#">LB 2</a></li>
-									<li class="expand"><a href="#">MySQL Master</a></li>
-									<li class="expand"><a href="#">MySQL Slave</a></li>
-								</ul>
-							</li>
-							<li class="expand"><a href="#">Load Balances</a></li>
-							<li class="expand"><a href="#">Databases</a></li>
-							<li class="expand"><a href="#">Load Balances</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-4-5" id="content-main">
-					<div class="grid">
-					<h2>Deployment Root</h2>
-					<div class="col-3-4">
-						<div class="filter">
-						<form method="post" action="">
-							<input type="text" name="" value="" />
-							<select class="actions">
-								<option>Actions</option>
-							</select>
-						</form>
-						<span class="settings-small"><a href="">&#xf085;</a></span>
-						<span class="add-item"><a href="#">&#xf067;</a></span>
-						</div>
-						<article class="module">
-							<table border="1">
-							  <thead>
-							    <tr>
-							      <th width="5%"><input type="checkbox" name="" value="" /></th>
-							      <th width="20%">Name</th>
-							      <th width="10%">Type</th>
-							      <th width="25%">Server Template</th>
-							      <th width="15%">Cloud</th>
-							      <th width="5%">CPU</th>
-							      <th width="30%">State</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr>
-							      <th><input type="checkbox" name="" value="" /></th>
-							      <th>HA Proxy 1</th>
-							      <th>Server</th>
-							      <th>Load Balancer with</th>
-							      <th>AWS-US-East</th>
-							      <th><span class="cpu-status on"></span></th>
-							      <th>Operational</th>
-							    </tr>
-							    <tr>
-							      <th><input type="checkbox" name="" value="" /></th>
-							      <th>HA Proxy 2</th>
-							      <th>Server</th>
-							      <th>Load Balancer with</th>
-							      <th>Rack Space</th>
-							      <th><span class="cpu-status"></span></th>
-							      <th>Inactive</th>
-							    </tr>
-							    <tr>
-							      <th><input type="checkbox" name="" value="" /></th>
-							      <th>My SQL DB</th>
-							      <th>Server</th>
-							      <th>Database Manager</th>
-							      <th>AWS-US-East</th>
-							      <th><span class="cpu-status on"></span></th>
-							      <th>Operational</th>
-							    </tr>
-							    <tr>
-							      <th><input type="checkbox" name="" value="" /></th>
-							      <th>DB Slave</th>
-							      <th>Array</th>
-							      <th>Database Manager</th>
-							      <th>RackSpace</th>
-							      <th><span class="cpu-status on"></span></th>
-							      <th>Enabled</th>
-							    </tr>
-			
-							  </tbody>
-							</table>
-						</article>
-					</div>
-					<div class="col-1-4" id="reporting">
-						<aside class="module">
-							<h3>Alerts</h3>
-							<ul class="alerts">
-								<li class="triggered">
-								<span class="count-brackets">[<span class="count">3</span>]</span><span class="">|||</span><span class="label float-right"> Triggered</span>
-								</li>
-								<li class="paused">
-								<span class="count-brackets">[<span class="count">10</span>]</span><span class="">|||||||||</span><span class="label float-right"> Paused</span></li>
-								<li class="active">
-								<span class="count-brackets">[<span class="count">30</span>]</span><span class="">||||||||||||||||||||||||||||||</span><span class="label float-right"> Active</span>
-								</li>
-							</ul>
-							<br>
-							<p><a href="#">High CPU</a> on <a href="">MySQL 5.5</a><br>
-							<a href="#">Scale up</a> on <a href="#">Rails App Server</a><br>
-							<a href="#">2 more...</a>
-							</p>
-						</aside>
-						<aside class="module" data-behavior="select">
-							<h3>Monitoring</h3>
-							<img src="img/graph.png" />
-							<form method="post" action="">
-								<ul class="input-list">
-									<li>
-									<label for="server-type">Type</label><select id="server-type">
-										<option>CPU-0</option>
-									</select>
-									</li>
-									<li>
-									<label for="server-type">Apply To</label><select id="server-type">
-										<option>All Servers</option>
-									</select>
-									</li>
-								</ul>
-							</form>
-						</aside>
-					</div>
-					</div>
-				</div>
-				</div>
-			</div>
-			<div id="root_footer"></div>
+			<h2>Javascript template for managing js code</h2>
 		</div>
-		</div>		
+
 		<footer id="footer">
-			<div class="translate float-left">
-			<form method="post" action="">
-				<select>
-					<option>Language</option>
-				</select>
-			</form>
-			<a href="">Help Us Translate</a>
-			</div>
-			<span class="copyright">&copy; 2006-2012 RightScale, Inc All Rights Reserved</span>
-			<span class="legal"><a href="#">Terms of Service</a> <span class=""> | </span>
-			<a href="#">Privacy Policy</a></span>
-			<span class="logged-in">Logged in as joshua.morse@righscale.com (<a href="#">Log Out</a>)</span>
 		</footer>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-        <script src="js/app/application.js"></script>
-        <script src="js/app/behaviors/behavior.select2.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+    <script src="js/application.js"></script>
+    <script src="js/behaviors/behavior.ex.js"></script>
+    <script src="js/plugins/jquery.boilerplate.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
     </body>
 </html>
