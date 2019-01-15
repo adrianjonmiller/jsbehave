@@ -1,0 +1,32 @@
+{
+  "name": "js-",
+  "version": "1.0.1",
+  "description": "Simple method for binding functions to the dom",
+  "main": "dist",
+  "scripts": {
+    "test": "webpack --progress --colors --watch --mode development --config=webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianjonmiller/jsbehave.git"
+  },
+  "keywords": [
+    "Js",
+    "framework",
+    "front-end"
+  ],
+  "author": "Adrian J. Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianjonmiller/jsbehave/issues"
+  },
+  "homepage": "https://github.com/adrianjonmiller/jsbehave#readme",
+  "devDependencies": {
+    "babel-loader": "8.0.5",
+    "webpack": "4.28.4",
+    "webpack-cli": "3.2.1"
+  },
+  "dependencies": {
+    "@babel/core": "7.2.2"
+  }
+}
