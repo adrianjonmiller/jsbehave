@@ -100,10 +100,27 @@ return /******/ (function(modules) { // webpackBootstrap
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: Cannot find module '@babel/core'\n babel-loader@8 requires Babel 7.x (the package '@babel/core'). If you'd like to use Babel 6.x ('babel-core'), you should install 'babel-loader@7'.\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (/Users/adrianmiller/Development/jsbehave/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)\n    at Object.<anonymous> (/Users/adrianmiller/Development/jsbehave/node_modules/babel-loader/lib/index.js:10:11)\n    at Module._compile (/Users/adrianmiller/Development/jsbehave/node_modules/v8-compile-cache/v8-compile-cache.js:178:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (/Users/adrianmiller/Development/jsbehave/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)\n    at loadLoader (/Users/adrianmiller/Development/jsbehave/node_modules/loader-runner/lib/loadLoader.js:13:17)\n    at iteratePitchingLoaders (/Users/adrianmiller/Development/jsbehave/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at runLoaders (/Users/adrianmiller/Development/jsbehave/node_modules/loader-runner/lib/LoaderRunner.js:362:2)\n    at NormalModule.doBuild (/Users/adrianmiller/Development/jsbehave/node_modules/webpack/lib/NormalModule.js:280:3)\n    at NormalModule.build (/Users/adrianmiller/Development/jsbehave/node_modules/webpack/lib/NormalModule.js:427:15)\n    at Compilation.buildModule (/Users/adrianmiller/Development/jsbehave/node_modules/webpack/lib/Compilation.js:633:10)\n    at moduleFactory.create (/Users/adrianmiller/Development/jsbehave/node_modules/webpack/lib/Compilation.js:1019:12)\n    at factory (/Users/adrianmiller/Development/jsbehave/node_modules/webpack/lib/NormalModuleFactory.js:405:6)\n    at hooks.afterResolve.callAsync (/Users/adrianmiller/Development/jsbehave/node_modules/webpack/lib/NormalModuleFactory.js:155:13)\n    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (/Users/adrianmiller/Development/jsbehave/node_modules/tapable/lib/HookCodeFactory.js:32:10), <anonymous>:6:1)\n    at AsyncSeriesWaterfallHook.lazyCompileHook (/Users/adrianmiller/Development/jsbehave/node_modules/tapable/lib/Hook.js:154:20)\n    at resolver (/Users/adrianmiller/Development/jsbehave/node_modules/webpack/lib/NormalModuleFactory.js:138:29)\n    at process.nextTick (/Users/adrianmiller/Development/jsbehave/node_modules/webpack/lib/NormalModuleFactory.js:342:9)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (class {
+  constructor() {
+    const methods = {};
+
+    if (document.readyState !== 'loading') {
+      console.log(methods);
+    } else {
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log(methods);
+      });
+    }
+
+    return methods;
+  }
+
+});
 
 /***/ })
 
